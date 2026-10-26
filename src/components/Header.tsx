@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { LayitekLogo } from './LayitekLogo';
 import { Menu, X, PhoneCall, ShieldCheck } from 'lucide-react';
+import { BrandLogoConfig } from '../types';
 
 interface HeaderProps {
   currentTab: string;
   onSelectTab: (tab: string) => void;
   onOpenLeadModal: (service?: string) => void;
   onOpenAdmin: () => void;
+  logoConfig?: BrandLogoConfig;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -14,6 +16,7 @@ export const Header: React.FC<HeaderProps> = ({
   onSelectTab,
   onOpenLeadModal,
   onOpenAdmin,
+  logoConfig,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -32,7 +35,12 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => handleNavClick('home')}
             className="flex items-center text-left hover:opacity-95 transition-opacity focus:outline-none shrink-0"
           >
-            <LayitekLogo size="md" showTagline={true} />
+            <LayitekLogo
+              size="md"
+              showTagline={logoConfig?.showTagline ?? false}
+              target="header"
+              logoConfig={logoConfig}
+            />
           </button>
 
           {/* Zone 2: 4-5 Single-Line Concise Nav Links */}

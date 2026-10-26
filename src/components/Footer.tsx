@@ -1,17 +1,20 @@
 import React from 'react';
 import { LayitekLogo } from './LayitekLogo';
 import { Phone, MessageCircle, Globe, Shield, ExternalLink } from 'lucide-react';
+import { BrandLogoConfig } from '../types';
 
 interface FooterProps {
   onSelectTab: (tab: string) => void;
   onOpenLeadModal: (service?: string) => void;
   onOpenAdmin: () => void;
+  logoConfig?: BrandLogoConfig;
 }
 
 export const Footer: React.FC<FooterProps> = ({
   onSelectTab,
   onOpenLeadModal,
   onOpenAdmin,
+  logoConfig,
 }) => {
   return (
     <footer className="bg-slate-900 text-slate-300 pt-14 pb-10 border-t border-slate-800">
@@ -21,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Col 1: Brand & Overview */}
           <div className="space-y-4 md:col-span-1">
             <div className="bg-white/95 p-2.5 rounded-xl inline-block shadow-sm">
-              <LayitekLogo size="md" />
+              <LayitekLogo size="md" target="footer" logoConfig={logoConfig} />
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
               Layitek Limited provides practical guides, statutory workflows, and

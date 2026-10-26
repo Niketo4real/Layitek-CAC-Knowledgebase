@@ -17,7 +17,7 @@ import { FAQS_DATA } from './data/faqs';
 import { GLOSSARY_TERMS } from './data/glossary';
 import { OFFICIAL_FEE_SCHEDULE } from './data/feeSchedule';
 import { CATEGORIES } from './data/categories';
-import { Article, FAQItem, GlossaryTerm, FeeItem, CategoryId, ArticleFeedback } from './types';
+import { Article, FAQItem, GlossaryTerm, FeeItem, CategoryId, ArticleFeedback, BrandLogoConfig } from './types';
 
 import {
   Compass,
@@ -37,12 +37,39 @@ import {
   Sparkles,
 } from 'lucide-react';
 
+const defaultLogoConfig: BrandLogoConfig = {
+  headerLogoUrl: '',
+  footerLogoUrl: '',
+  headerHeight: 46,
+  footerHeight: 50,
+  showTagline: false,
+};
+
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('home');
   const [selectedCategory, setSelectedCategory] = useState<CategoryId | 'all'>('all');
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
   const [leadModalOpen, setLeadModalOpen] = useState(false);
   const [leadModalService, setLeadModalService] = useState<string>('General Filing Assistance');
+
+  // Logo & Branding configuration with localStorage persistence
+  const [logoConfig, setLogoConfig] = useState<BrandLogoConfig>(() => {
+    try {
+      const saved = localStorage.getItem('layitek_brand_logo_config');
+      return saved ? JSON.parse(saved) : defaultLogoConfig;
+    } catch {
+      return defaultLogoConfig;
+    }
+  });
+
+  const handleUpdateLogoConfig = (updated: BrandLogoConfig) => {
+    setLogoConfig(updated);
+    try {
+      localStorage.setItem('layitek_brand_logo_config', JSON.stringify(updated));
+    } catch (e) {
+      console.error('Failed to save logo config to localStorage', e);
+    }
+  };
 
   // Articles state with localStorage persistence
   const [articles, setArticles] = useState<Article[]>(() => {
@@ -197,9 +224,11 @@ export default function App() {
           faqs={faqs}
           fees={fees}
           feedbackList={feedbackList}
+          logoConfig={logoConfig}
           onUpdateArticles={handleUpdateArticles}
           onUpdateFaqs={handleUpdateFaqs}
           onUpdateFees={handleUpdateFees}
+          onUpdateLogoConfig={handleUpdateLogoConfig}
           onExit={() => {
             setCurrentTab('home');
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -210,6 +239,7 @@ export default function App() {
           {/* Universal Top Navigation Header */}
           <Header
             currentTab={currentTab}
+            logoConfig={logoConfig}
             onSelectTab={(tab) => {
               setCurrentTab(tab);
               setSelectedArticle(null);
@@ -488,6 +518,7 @@ export default function App() {
               setCurrentTab('admin');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
+            logoConfig={logoConfig}
           />
 
           {/* Service Request & Conversion Modal */}

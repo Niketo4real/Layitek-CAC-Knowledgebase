@@ -145,3 +145,12 @@ export interface ArticleFeedback {
   comment?: string;
   timestamp: string;
 }
+
+export interface BrandLogoConfig {
+  headerLogoUrl: string;
+  footerLogoUrl: string;
+  headerHeight: number;
+  footerHeight: number;
+  showTagline: boolean;
+}
+
