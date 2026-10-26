@@ -1,0 +1,661 @@
+import { Article } from '../types';
+
+export const ARTICLES_DATA: Article[] = [
+  {
+    id: 'art-getting-started-overview',
+    slug: 'what-does-cac-do-nigeria-guide',
+    title: 'What Does the Corporate Affairs Commission (CAC) Do? Complete Guide to Nigerian Business Registration',
+    categoryId: 'getting-started',
+    entityType: 'all',
+    summary: 'An introductory guide explaining the statutory role of the Corporate Affairs Commission (CAC) under CAMA 2020, why registration is legally mandatory in Nigeria, and which corporate structures exist.',
+    whoIsThisFor: 'First-time founders, entrepreneurs, small business owners, freelancers, and foreign investors preparing to do business in Nigeria.',
+    whenNecessary: 'Essential before launching commercial trading, opening a corporate bank account, bidding for government contracts, or formalizing partnerships.',
+    eligibilityPrerequisites: [
+      'At least 18 years of age (or legal guardian for minors in permitted entities).',
+      'Valid National Identification Number (NIN) issued by NIMC.',
+      'Clear, unencumbered proposed business or company name.',
+      'Physical business address located within Nigeria.',
+    ],
+    requiredDocuments: [
+      'Valid Government-issued ID / NIN for all proprietors or directors.',
+      'Scanned specimen signature on white paper.',
+      'Clear passport photograph.',
+      'Contact information (email and mobile number).',
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Choose the Appropriate Legal Structure',
+        description: 'Decide whether a Business Name (Sole Proprietor/Partnership), Private Limited Company (LTD), Incorporated Trustees (NGO), or Limited Liability Partnership (LLP) suits your commercial scale.',
+        portalAction: 'Read CAMA 2020 classification guidelines.',
+        tips: 'A Business Name is cheaper and faster, while a Limited Liability Company protects personal assets.',
+      },
+      {
+        stepNumber: 2,
+        title: 'Conduct Name Availability Search & Reservation',
+        description: 'Submit two proposed name options on the official i-CRP portal (icrp.cac.gov.ng). If available, pay the ₦500 reservation fee.',
+        portalAction: 'Navigate to "New Name Reservation" on i-CRP.',
+        tips: 'Avoid generic words like "Super", "Global", or restricted words without special ministerial permission.',
+      },
+      {
+        stepNumber: 3,
+        title: 'Complete Entity Registration on i-CRP',
+        description: 'Input proprietor or director particulars, upload verification documents, configure share capital (for companies), and declare Persons with Significant Control (PSC).',
+        portalAction: 'Complete forms under "Registration" on i-CRP.',
+        tips: 'Ensure names and birth dates match the NIMC National Identity Database to prevent instant query rejections.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Pay Statutory Filing Fees & Stamp Duties',
+        description: 'Pay via the integrated Remita gateway. Companies also pay statutory FIRS stamp duty calculated on issued share capital.',
+        portalAction: 'Generate Remita Retrieval Reference (RRR) and complete payment.',
+      },
+      {
+        stepNumber: 5,
+        title: 'Download Electronic Certificate & Status Report',
+        description: 'Upon review and approval by CAC officers (typically within 48 to 72 hours), download your QR-code-authenticated PDF certificate and Status Report directly.',
+        portalAction: 'Access "Approved Applications" dashboard.',
+      },
+    ],
+    officialFees: {
+      statutoryFee: '₦500 (Name Reservation) + ₦10,000 (Registration)',
+      stampDuty: 'Applicable only to companies (approx. 0.75% of issued share capital)',
+      notes: 'Standard Remita payment gateway processing fees apply separately.',
+    },
+    processingTimeline: '48 to 72 hours for clean, unqueried applications.',
+    commonMistakes: [
+      'Operating without registration beyond the 28-day statutory window under CAMA Sec 814.',
+      'Submitting names with mismatched birth dates compared to NIMC NIN records.',
+      'Failing to keep portal login credentials and payment receipts secure.',
+    ],
+    faqs: [
+      {
+        question: 'Is a physical CAC office visit required to collect my certificate?',
+        answer: 'No. All approved certificates and status reports are issued digitally as authenticated PDF documents with verifiable QR codes.',
+      },
+      {
+        question: 'Does CAC registration automatically register me for taxes?',
+        answer: 'CAC incorporation automatically generates a Joint Tax Board (JTB) Tax Identification Number (TIN), but you must still formalize your tax filing profile with FIRS and your State IRS.',
+      },
+    ],
+    sources: [
+      {
+        title: 'CAC Nigeria Official Portal',
+        url: 'https://cac.gov.ng/',
+        retrievalDate: '2026-10-25',
+        sourceType: 'official-portal',
+      },
+      {
+        title: 'Companies and Allied Matters Act 2020 (CAMA)',
+        url: 'https://cac.gov.ng/cama-2020',
+        retrievalDate: '2026-10-25',
+        sourceType: 'statute-cama',
+      },
+    ],
+    relatedArticleIds: ['art-choose-legal-structure', 'art-business-name-guide', 'art-private-ltd-incorporation'],
+    lastVerifiedDate: '2026-10-25',
+    status: 'verified',
+    ctaText: 'Need Help Starting Your CAC Registration?',
+  },
+  {
+    id: 'art-choose-legal-structure',
+    slug: 'choosing-right-business-structure-nigeria-cama',
+    title: 'Choosing the Right Business Structure in Nigeria: Business Name vs Company vs NGO',
+    categoryId: 'getting-started',
+    entityType: 'all',
+    summary: 'A definitive comparison of Business Names, Private Limited Companies (LTD), Public Companies (PLC), Incorporated Trustees, and Limited Liability Partnerships (LLP) under CAMA 2020.',
+    whoIsThisFor: 'Entrepreneurs, partnerships, founders, and professionals evaluating legal liability, tax implications, and growth strategy.',
+    whenNecessary: 'Before submitting any name reservation or making long-term corporate commitments.',
+    eligibilityPrerequisites: [
+      'Understanding of your capital requirements and investor needs.',
+      'Understanding of personal liability tolerance.',
+      'Identification of whether the organization is for-profit or non-profit.',
+    ],
+    requiredDocuments: [
+      'Business plan / operational summary.',
+      'Proposed list of partners, directors, or trustees.',
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Assess Personal Liability Risk',
+        description: 'If you want full personal asset protection from business debts, choose a Limited Liability Company (LTD). If you are a solo trader with minimal liability risk, a Business Name is suitable.',
+        tips: 'In a Business Name, creditors can legally claim your personal bank accounts and assets to satisfy business debts.',
+      },
+      {
+        stepNumber: 2,
+        title: 'Evaluate Equity & Investment Requirements',
+        description: 'Venture capitalists, commercial banks, and institutional angel investors will not invest in a Business Name. They require issued shares in a Private Limited Company.',
+      },
+      {
+        stepNumber: 3,
+        title: 'Consider Non-Profit / Public Welfare Missions',
+        description: 'If you are setting up a charity, church, alumni association, or educational foundation, register under Part F as Incorporated Trustees or Section 26 as Company Limited by Guarantee.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Review Ongoing Compliance Overhead',
+        description: 'A Business Name has minimal compliance (₦3,000/yr return), while an LTD requires formal minutes, AGM resolutions, and corporate annual returns.',
+      },
+    ],
+    officialFees: {
+      statutoryFee: 'Business Name: ₦10,500 total | Private LTD: ₦10,500 + stamp duty | NGO: ₦35,500',
+      notes: 'Excludes professional legal advisory and publication expenses.',
+    },
+    processingTimeline: '1 to 5 working days depending on entity structure.',
+    commonMistakes: [
+      'Registering a Business Name when planning to raise venture capital or distribute equity.',
+      'Registering an LTD when a simple sole proprietorship trading name was sufficient.',
+      'Assuming an NGO or charity can distribute dividends to trustees.',
+    ],
+    faqs: [
+      {
+        question: 'Can I change my Business Name to a Company later?',
+        answer: 'Yes. CAMA allows conversion from a business name to a limited company, though it requires formal documentation and registration fees.',
+      },
+    ],
+    sources: [
+      {
+        title: 'CAMA 2020 Entity Classifications',
+        url: 'https://cac.gov.ng/cama-2020',
+        retrievalDate: '2026-10-25',
+        sourceType: 'statute-cama',
+      },
+    ],
+    relatedArticleIds: ['art-getting-started-overview', 'art-business-name-guide', 'art-private-ltd-incorporation'],
+    lastVerifiedDate: '2026-10-25',
+    status: 'verified',
+    ctaText: 'Need Help Choosing Your Entity Structure?',
+  },
+  {
+    id: 'art-business-name-guide',
+    slug: 'how-to-register-business-name-nigeria-icrp',
+    title: 'How to Register a Business Name in Nigeria on the CAC i-CRP Portal',
+    categoryId: 'business-name',
+    entityType: 'business-name',
+    summary: 'A step-by-step walkthrough of registering a sole proprietorship or partnership business name on the CAC i-CRP portal under Part E of CAMA 2020.',
+    whoIsThisFor: 'Sole proprietors, artisans, consultants, online merchants, and micro-business partners in Nigeria.',
+    whenNecessary: 'Mandatory within 28 days of commencing trading under a business name other than your legal surname and forenames.',
+    eligibilityPrerequisites: [
+      'Must be at least 18 years old.',
+      'Must possess an active National Identification Number (NIN).',
+      'Must operate within a recognized industry classification.',
+    ],
+    requiredDocuments: [
+      '11-digit NIN of proprietor(s).',
+      'Digital passport photograph with white background.',
+      'Scanned signature in black ink.',
+      'Principal business address proof (utility bill or tenancy agreement).',
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Create an Account on icrp.cac.gov.ng',
+        description: 'Register as an individual public user using your active email, phone number, and verified NIN.',
+        portalAction: 'Click "Sign Up" on icrp.cac.gov.ng.',
+      },
+      {
+        stepNumber: 2,
+        title: 'Submit Name Availability Reservation',
+        description: 'Provide two name options (e.g. "Layitek Agro Ventures"). Pay ₦500 via Remita. Approval takes 24-48 hours and reserves the name for 60 days.',
+        portalAction: 'Select "Name Reservation" -> "Business Name".',
+      },
+      {
+        stepNumber: 3,
+        title: 'Complete Registration Particulars',
+        description: 'Click "Register" next to the approved name. Enter business address, nature of business, commencement date, and proprietor information.',
+        portalAction: 'Fill Part E Business Particulars form.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Upload Verification Documents',
+        description: 'Attach the proprietor’s passport photo and clean specimen signature.',
+        tips: 'Keep image files under 2MB in JPG or PNG format.',
+      },
+      {
+        stepNumber: 5,
+        title: 'Pay Registration Fee & Await Approval',
+        description: 'Pay the statutory ₦10,000 fee via Remita. Review status regularly on the dashboard.',
+      },
+      {
+        stepNumber: 6,
+        title: 'Download Certificate & Status Report',
+        description: 'Once status indicates "Approved", download your electronic Certificate of Registration (BN) and Status Report.',
+      },
+    ],
+    officialFees: {
+      statutoryFee: '₦500 (Reservation) + ₦10,000 (Registration)',
+      notes: 'No stamp duty is charged on business names.',
+    },
+    processingTimeline: '48 to 72 hours upon submission.',
+    commonMistakes: [
+      'Entering a name or date of birth that contradicts the NIMC NIN database.',
+      'Using a P.O. Box instead of a physical verifiable street address.',
+      'Selecting restricted words like "Holdings", "Limited", or "Bank" under a business name.',
+    ],
+    faqs: [
+      {
+        question: 'Does a Business Name need an annual audit?',
+        answer: 'No. Business names do not require audited financial accounts; only a simple annual return of ₦3,000/yr is required.',
+      },
+    ],
+    sources: [
+      {
+        title: 'CAC Business Name Services',
+        url: 'https://cac.gov.ng/services/business-name',
+        retrievalDate: '2026-10-25',
+        sourceType: 'official-portal',
+      },
+    ],
+    relatedArticleIds: ['art-name-reservation-search', 'art-upgrade-business-to-ltd'],
+    lastVerifiedDate: '2026-10-25',
+    status: 'verified',
+    ctaText: 'Need Help Registering Your Business Name?',
+  },
+  {
+    id: 'art-private-ltd-incorporation',
+    slug: 'how-to-incorporate-private-limited-company-ltd-nigeria',
+    title: 'How to Incorporate a Private Limited Liability Company (LTD) Under CAMA 2020',
+    categoryId: 'company-incorporation',
+    entityType: 'private-ltd',
+    summary: 'Comprehensive, step-by-step regulatory instructions for registering a private company limited by shares on the CAC i-CRP portal under Part B of CAMA 2020.',
+    whoIsThisFor: 'Startup founders, tech entrepreneurs, expanding businesses, SMEs, and commercial companies seeking corporate legal personality.',
+    whenNecessary: 'When setting up a separate legal entity, securing external funding, safeguarding personal wealth, or qualifying for corporate contracts.',
+    eligibilityPrerequisites: [
+      'Minimum of one director and one shareholder (can be the same individual).',
+      'Minimum issued share capital of ₦100,000.',
+      'Approved company name reservation ending with "Limited" or "Ltd".',
+      'Registered office address situated in Nigeria.',
+    ],
+    requiredDocuments: [
+      'Verified NIN of all directors and shareholders.',
+      'Specimen signatures and passport photographs.',
+      'Draft Memorandum and Articles of Association (or CAC Model Articles).',
+      'Persons with Significant Control (PSC) disclosure schedule.',
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Name Availability Search & Reservation',
+        description: 'Submit proposed corporate names ending with "Limited" or "Ltd". Pay ₦500. Approved names are reserved for 60 days.',
+        portalAction: 'Select "Name Reservation" -> "Company".',
+      },
+      {
+        stepNumber: 2,
+        title: 'Define Share Capital & Allotment',
+        description: 'Specify the total issued share capital (minimum ₦100,000, commonly ₦1,000,000 for standard SMEs). Allocate 100% of issued shares among subscribers.',
+        tips: 'Under CAMA 2020, you can no longer have unissued shares.',
+      },
+      {
+        stepNumber: 3,
+        title: 'Appoint Directors & Declare Particulars',
+        description: 'Enter director details with verified NIN. Small companies only require a single director.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Declare Persons with Significant Control (PSC)',
+        description: 'Disclose any natural individual with 5% or more equity, voting rights, or operational control as required by Sections 119 and 120.',
+      },
+      {
+        stepNumber: 5,
+        title: 'Adopt Memorandum & Articles (MEMART)',
+        description: 'Choose either the statutory CAC Model Articles or upload customized bespoke Articles of Association.',
+      },
+      {
+        stepNumber: 6,
+        title: 'Pay CAC Fees and FIRS Stamp Duty',
+        description: 'Pay ₦10,000 base CAC incorporation fee plus approx. 0.75% FIRS stamp duty via integrated Remita portal.',
+      },
+      {
+        stepNumber: 7,
+        title: 'Download Certificate of Incorporation & Status Report',
+        description: 'Download your QR-code-authenticated RC Certificate and electronic Status Report upon CAC officer clearance.',
+      },
+    ],
+    officialFees: {
+      statutoryFee: '₦10,000 (Initial ₦1M capital) + ₦5,000 per subsequent ₦1M',
+      stampDuty: 'Approximately 0.75% of issued share capital value',
+      notes: 'Name reservation (₦500) and Remita charges apply.',
+    },
+    processingTimeline: '2 to 4 working days.',
+    commonMistakes: [
+      'Leaving unissued shares (all shares must be allocated to subscribers).',
+      'Omitting the mandatory PSC beneficial ownership disclosure.',
+      'Listing inconsistent residential addresses across director profiles.',
+    ],
+    faqs: [
+      {
+        question: 'Do I need a Company Secretary to register a private company?',
+        answer: 'No. Small private companies are exempt from mandatory secretary appointment under CAMA 2020 Sec 330.',
+      },
+      {
+        question: 'Can one person own 100% of a company in Nigeria?',
+        answer: 'Yes! CAMA 2020 Sec 18(2) explicitly permits single-member private companies.',
+      },
+    ],
+    sources: [
+      {
+        title: 'CAC Company Registration Guidelines',
+        url: 'https://cac.gov.ng/services/company-registration',
+        retrievalDate: '2026-10-25',
+        sourceType: 'official-portal',
+      },
+      {
+        title: 'CAMA 2020 Part B',
+        url: 'https://cac.gov.ng/cama-2020',
+        retrievalDate: '2026-10-25',
+        sourceType: 'statute-cama',
+      },
+    ],
+    relatedArticleIds: ['art-psc-beneficial-ownership', 'art-share-capital-rules', 'art-post-inc-change-directors'],
+    lastVerifiedDate: '2026-10-25',
+    status: 'verified',
+    ctaText: 'Get Expert Assistance Incorporating Your Company',
+  },
+  {
+    id: 'art-psc-beneficial-ownership',
+    slug: 'persons-with-significant-control-psc-register-guide',
+    title: 'Understanding Persons with Significant Control (PSC) & Beneficial Ownership Register (BOR)',
+    categoryId: 'company-incorporation',
+    entityType: 'private-ltd',
+    summary: 'A comprehensive compliance guide explaining the mandatory disclosure of Persons with Significant Control (PSC) under CAMA 2020 Sections 119 and 120 and the public Beneficial Ownership Register.',
+    whoIsThisFor: 'Company directors, major shareholders, compliance officers, and legal advisors in Nigeria.',
+    whenNecessary: 'Mandatory upon initial incorporation and within 7 days of any change in ownership or control above the 5% threshold.',
+    eligibilityPrerequisites: [
+      'Identification of natural persons holding 5% or more equity or voting rights.',
+      'Identification of individuals exercising ultimate effective control.',
+    ],
+    requiredDocuments: [
+      'Valid NIN and passport photo of the PSC.',
+      'Written declaration of PSC particulars.',
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Identify Qualifying Beneficial Owners',
+        description: 'Examine shareholdings and governance arrangements. Any person with 5% or more shares, 5% voting rights, or board appointment power qualifies.',
+      },
+      {
+        stepNumber: 2,
+        title: 'Record Particulars in Company Internal PSC Register',
+        description: 'Maintain an internal register at the registered office containing full names, address, date of becoming a PSC, and nature of control.',
+      },
+      {
+        stepNumber: 3,
+        title: 'Notify the CAC via i-CRP Portal',
+        description: 'Submit the PSC declaration on i-CRP within 7 days of acquiring or changing control status.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Verify Details on the Public BOR Portal',
+        description: 'Cross-check the official Beneficial Ownership Register at bor.cac.gov.ng to ensure transparency compliance.',
+      },
+    ],
+    officialFees: {
+      statutoryFee: 'Included in initial incorporation | ₦5,000 for post-incorporation updates',
+      notes: 'Failure to disclose attracts severe statutory daily default fines.',
+    },
+    processingTimeline: '24 to 48 hours for filing updates.',
+    commonMistakes: [
+      'Assuming only individuals with over 50% shares qualify (the CAMA threshold is strictly 5%).',
+      'Failing to disclose indirect ownership held through holding companies or nominees.',
+      'Missing the 7-day notification window following share transfers.',
+    ],
+    faqs: [
+      {
+        question: 'Can a corporate entity be listed as the ultimate PSC?',
+        answer: 'No. The law requires identifying the natural living individual who ultimately owns or controls the corporate shareholder.',
+      },
+    ],
+    sources: [
+      {
+        title: 'CAC Beneficial Ownership Register',
+        url: 'https://bor.cac.gov.ng/',
+        retrievalDate: '2026-10-25',
+        sourceType: 'official-portal',
+      },
+      {
+        title: 'CAMA 2020 Sections 119 & 120',
+        url: 'https://cac.gov.ng/cama-2020',
+        retrievalDate: '2026-10-25',
+        sourceType: 'statute-cama',
+      },
+    ],
+    relatedArticleIds: ['art-private-ltd-incorporation', 'art-post-inc-transfer-shares'],
+    lastVerifiedDate: '2026-10-25',
+    status: 'verified',
+    ctaText: 'Need Compliance Help with PSC & BOR Filings?',
+  },
+  {
+    id: 'art-post-inc-change-directors',
+    slug: 'how-to-appoint-remove-directors-cac-icrp',
+    title: 'How to Appoint, Resign, or Remove Company Directors on CAC i-CRP',
+    categoryId: 'post-incorporation',
+    entityType: 'private-ltd',
+    summary: 'Step-by-step legal procedures for changing company board composition on the CAC i-CRP portal under CAMA 2020 Sections 318 through 321.',
+    whoIsThisFor: 'Board chairs, executive directors, company secretaries, and corporate shareholders modifying board leadership.',
+    whenNecessary: 'When a new director is appointed, an existing director resigns, or a director is removed for misconduct or end of tenure.',
+    eligibilityPrerequisites: [
+      'Company must be in active legal standing (annual returns up to date).',
+      'Ordinary Resolution passed by members.',
+      'Incoming director must meet statutory eligibility (at least 18 years old, sound mind, not disqualified).',
+    ],
+    requiredDocuments: [
+      'Signed Ordinary Resolution of the company.',
+      'Formal Letter of Resignation (for exiting director).',
+      'Signed Consent Letter (for incoming director).',
+      'Valid NIN and specimen signature of new director.',
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Pass Ordinary Resolution',
+        description: 'Hold a shareholder meeting or pass a written resolution approving the removal or appointment.',
+      },
+      {
+        stepNumber: 2,
+        title: 'Obtain Signed Consent & Verification Documents',
+        description: 'Collect the new director’s formal written consent letter and verify their NIN against the NIMC database.',
+      },
+      {
+        stepNumber: 3,
+        title: 'Initiate Post-Incorporation Filing on i-CRP',
+        description: 'Log in, select "Post-Incorporation" -> "Change of Directors", select the company, and enter the modifications.',
+        portalAction: 'Select "Change of Director Particulars" on i-CRP.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Upload Resolutions & Pay Statutory Fee',
+        description: 'Upload signed resolutions and consent letters. Pay the ₦5,000 statutory filing fee via Remita.',
+      },
+      {
+        stepNumber: 5,
+        title: 'Download Updated Status Report',
+        description: 'Upon approval, download the revised Status Report reflecting the updated board composition.',
+      },
+    ],
+    officialFees: {
+      statutoryFee: '₦5,000 per director modification filing',
+      notes: 'Late filing penalties apply if submitted beyond 14 days of the resolution.',
+    },
+    processingTimeline: '3 to 5 working days.',
+    commonMistakes: [
+      'Attempting to file director changes while the company has delinquent annual returns.',
+      'Failing to attach the outgoing director’s resignation letter.',
+      'Failing to give statutory notice to a director being removed under Section 288.',
+    ],
+    faqs: [
+      {
+        question: 'Can a director be removed without their consent?',
+        answer: 'Yes. Under Section 288 of CAMA, a company may by ordinary resolution remove a director before the expiration of their tenure, provided special notice was given.',
+      },
+    ],
+    sources: [
+      {
+        title: 'CAC Post-Incorporation Regulations 2021',
+        url: 'https://cac.gov.ng/resources',
+        retrievalDate: '2026-10-25',
+        sourceType: 'cac-guideline',
+      },
+      {
+        title: 'CAMA 2020 Sections 318 - 321',
+        url: 'https://cac.gov.ng/cama-2020',
+        retrievalDate: '2026-10-25',
+        sourceType: 'statute-cama',
+      },
+    ],
+    relatedArticleIds: ['art-private-ltd-incorporation', 'art-annual-returns-guide'],
+    lastVerifiedDate: '2026-10-25',
+    status: 'verified',
+    ctaText: 'Need Assistance Updating Your Board of Directors?',
+  },
+  {
+    id: 'art-annual-returns-guide',
+    slug: 'cac-annual-returns-filing-due-dates-penalties',
+    title: 'CAC Annual Returns Filing Guide: Due Dates, Requirements, Fees, and Penalties',
+    categoryId: 'annual-returns',
+    entityType: 'all',
+    summary: 'An exhaustive compliance manual explaining annual return obligations for Nigerian business names, private companies, and NGOs under CAMA 2020.',
+    whoIsThisFor: 'All registered business proprietors, corporate directors, trustees, accountants, and company secretaries.',
+    whenNecessary: 'Mandatory every single year to retain active corporate legal status and avoid severe delisting and banking freezes.',
+    eligibilityPrerequisites: [
+      'Valid CAC registration number (RC, BN, or IT).',
+      'Prepared financial records or Statement of Affairs for the preceding accounting year.',
+    ],
+    requiredDocuments: [
+      'Company RC / BN Certificate copy.',
+      'Statement of Financial Affairs (for small companies).',
+      'Audited Financial Statements (for non-small or public companies).',
+      'Updated list of directors and shareholders.',
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Determine Applicable Filing Window',
+        description: 'Business names: due by 30th June each year. Companies: due within 42 days after the Annual General Meeting.',
+      },
+      {
+        stepNumber: 2,
+        title: 'Prepare Statement of Affairs or Financial Statements',
+        description: 'Small companies prepare an unaudited Statement of Affairs signed by two directors. Non-small companies must obtain certified audited statements.',
+      },
+      {
+        stepNumber: 3,
+        title: 'File on the i-CRP Portal',
+        description: 'Select "File Annual Returns", choose the overdue year(s), upload statements, and confirm corporate details.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Pay Statutory Filing Fee & Outstanding Penalties',
+        description: 'Business name: ₦3,000/yr. Small company: ₦5,000/yr. Pay applicable late filing penalty fees.',
+      },
+      {
+        stepNumber: 5,
+        title: 'Verify Status Restored to "Active"',
+        description: 'Confirm on search.cac.gov.ng that the entity status is updated from "Inactive" to "Active".',
+      },
+    ],
+    officialFees: {
+      statutoryFee: '₦3,000/yr (Business Name) | ₦5,000/yr (Small Company) | ₦10,000/yr (Large Company)',
+      notes: 'Late penalties accumulate for every year unfiled.',
+    },
+    processingTimeline: '24 to 48 hours for digital processing.',
+    commonMistakes: [
+      'Confusing CAC annual returns with Federal Inland Revenue Service (FIRS) tax payments.',
+      'Filing out of chronological order (must file older overdue years first).',
+      'Letting the company remain inactive until banks freeze corporate credit lines.',
+    ],
+    faqs: [
+      {
+        question: 'Does a company that did not make any profit still have to file annual returns?',
+        answer: 'Yes! Filing annual returns is a legal corporate existence obligation regardless of whether the business traded, made a profit, or operated at a loss.',
+      },
+    ],
+    sources: [
+      {
+        title: 'CAMA 2020 Sections 417 - 425',
+        url: 'https://cac.gov.ng/cama-2020',
+        retrievalDate: '2026-10-25',
+        sourceType: 'statute-cama',
+      },
+      {
+        title: 'CAC Annual Returns Operational Guidelines',
+        url: 'https://cac.gov.ng/resources',
+        retrievalDate: '2026-10-25',
+        sourceType: 'cac-guideline',
+      },
+    ],
+    relatedArticleIds: ['art-regularise-inactive-company', 'art-getting-started-overview'],
+    lastVerifiedDate: '2026-10-25',
+    status: 'verified',
+    ctaText: 'Need Help Filing Outstanding Annual Returns?',
+  },
+  {
+    id: 'art-troubleshoot-query',
+    slug: 'how-to-resolve-queried-cac-application-icrp',
+    title: 'How to Resolve a Queried CAC Application on the i-CRP Portal',
+    categoryId: 'troubleshooting',
+    entityType: 'all',
+    summary: 'A practical, troubleshooting troubleshooting guide on deciphering rejection notices, harmonizing identity mismatches, and successfully resolving queries within the 7-day statutory window.',
+    whoIsThisFor: 'Applicants and business owners whose registration or post-incorporation filing has been queried by a CAC reviewing officer.',
+    whenNecessary: 'Immediately upon receiving an email or dashboard alert indicating application status "Queried".',
+    eligibilityPrerequisites: [
+      'Active i-CRP user account.',
+      'Application availability code or reference number.',
+    ],
+    requiredDocuments: [
+      'Corrected document or rectified form specified in the query note.',
+      'Updated NIMC NIN slip if query relates to identity mismatch.',
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Review the Reviewing Officer\'s Remarks',
+        description: 'Log into icrp.cac.gov.ng, go to "Queried Applications", and read the exact query remark carefully.',
+      },
+      {
+        stepNumber: 2,
+        title: 'Harmonize Particulars',
+        description: 'If the query states "NIN particulars mismatch", confirm that your name spelling and birth date match NIMC records.',
+      },
+      {
+        stepNumber: 3,
+        title: 'Upload the Corrected Files',
+        description: 'Click "Action / Resolve Query", replace the queried document with a high-resolution, clear PDF/JPG.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Resubmit for Re-evaluation',
+        description: 'Submit your response within 7 working days. No additional fee is charged for re-submitting a query.',
+      },
+    ],
+    officialFees: {
+      statutoryFee: '₦0 (Query re-submission is free within statutory timeframe)',
+      notes: 'Prolonged abandonment beyond 7 days can cause application forfeiture.',
+    },
+    processingTimeline: '24 to 48 hours after query re-submission.',
+    commonMistakes: [
+      'Ignoring queries for weeks, leading to application abandonment.',
+      'Re-uploading the exact same illegible image without correcting the flaw.',
+      'Paying a second registration fee instead of using the "Resolve Query" button.',
+    ],
+    faqs: [
+      {
+        question: 'Do I have to pay another fee to answer a query?',
+        answer: 'No. Answering and resolving a query on an existing application is completely free of charge.',
+      },
+    ],
+    sources: [
+      {
+        title: 'CAC i-CRP Help Center & Query Resolution FAQ',
+        url: 'https://icrp.cac.gov.ng/support/faq/',
+        retrievalDate: '2026-10-25',
+        sourceType: 'official-portal',
+      },
+    ],
+    relatedArticleIds: ['art-business-name-guide', 'art-private-ltd-incorporation'],
+    lastVerifiedDate: '2026-10-25',
+    status: 'verified',
+    ctaText: 'Application Stuck or Queried? Let Layitek Resolve It',
+  },
+];

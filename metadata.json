@@ -1,0 +1,6 @@
+{
+  "name": "Layitek CAC Knowledge Base",
+  "description": "Comprehensive guide to Corporate Affairs Commission (CAC) business registration, company incorporation, CAMA 2020 compliance, and post-incorporation services in Nigeria by Layitek Limited.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

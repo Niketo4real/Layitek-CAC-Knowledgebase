@@ -1,0 +1,447 @@
+MASTER PROMPT: BUILD LAYITEK CAC INCORPORATION KNOWLEDGE BASE
+1. Project identity
+Act as a senior full-stack web developer, UX/UI designer, Nigerian corporate compliance researcher, technical writer, information architect, SEO strategist, and knowledge-base engineer.
+Your assignment is to research, design, develop, populate, and deploy a professional knowledge-base website for Layitek Limited, focused exclusively on Corporate Affairs Commission (CAC) business registration, incorporation, and post-incorporation services in Nigeria.
+Website name: Layitek CAC Knowledge Base
+Brand: Layitek Limited
+Existing website: https://www.layitek.com 
+Proposed Website for Deployment: https://incorporations.layitek.com
+Primary audience: Nigerian entrepreneurs, SMEs, startup founders, business owners, directors, shareholders, trustees, company secretaries, accountants, and individuals seeking to register or manage a registered entity.
+Primary objective: Help visitors find accurate, practical answers to their CAC-related questions while generating qualified leads for Layitek's pre-incorporation and post-incorporation services.
+Do not build a generic corporate website or a superficial collection of FAQs. Build a comprehensive, searchable, expandable knowledge platform with structured categories, articles, procedural guides, FAQs, definitions, document checklists, decision trees, and contextual service calls to action.
+2. Mandatory research: crawl official CAC sources
+Before writing the knowledge-base content, conduct a structured crawl and research exercise using the following official sources:
+1.	CAC main website: https://cac.gov.ng/
+2.	CAC company registration: https://cac.gov.ng/services/company-registration
+3.	CAC business-name registration: https://cac.gov.ng/services/business-name
+4.	CAC official resources and downloadable documents: https://cac.gov.ng/resources
+5.	CAC service timelines: https://cac.gov.ng/services/service-timelines
+6.	CAC i-CRP official registration portal and help centre: https://icrp.cac.gov.ng/
+7.	CAC i-CRP FAQs: https://icrp.cac.gov.ng/support/faq/
+8.	CAC beneficial ownership register: https://bor.cac.gov.ng/
+9.	CAC official news, public notices, operational checklists, regulations, statutory forms, and relevant legislation published on official CAC domains.
+Discover and follow relevant internal links from these pages. Crawl linked official FAQs, downloadable PDFs, user guides, service descriptions, forms, checklists, regulations, announcements, and other documents relevant to pre-incorporation and post-incorporation services.
+Prioritise official primary sources. Where necessary, consult legislation such as the Companies and Allied Matters Act 2020 (CAMA), applicable regulations, and other relevant Nigerian laws through authoritative government sources.
+Research requirements
+•	Extract factual requirements, procedures, eligibility criteria, required documents, filing routes, fees, applicable deadlines, exceptions, and service timelines.
+•	Identify the source URL and retrieval date for every substantive regulatory claim.
+•	Extract relevant text from PDFs and inspect scanned documents using OCR where necessary.
+•	Distinguish between current procedures on the new i-CRP and any obsolete procedures described in older documents.
+•	Verify whether each procedure is current before publishing it.
+•	Identify inconsistencies between older CAC publications and newer official portal guidance.
+•	Prioritise the latest applicable official guidance, legislation, and formal notices. Do not assume that the newest webpage automatically overrides legislation.
+•	Never invent filing requirements, statutory fees, penalties, deadlines, approval guarantees, or required documents.
+•	If information cannot be verified, label it “Verification required” and send it for editorial review rather than presenting it as established fact.
+•	Respect website access restrictions, robots.txt, rate limits, copyright, and applicable terms of use. Do not bypass authentication or access controls.
+•	Do not copy the entire CAC website or reproduce long copyrighted passages. Summarise and explain official information in original, accessible language.
+•	Do not reproduce personal data found in publicly accessible corporate records.
+Deliver a research inventory containing source URL, page or document title, publication or update date where available, retrieval date, topics covered, relevant extracted facts, and verification status.
+3. Knowledge-base architecture
+Organise the knowledge base into the following top-level categories.
+Category A: Getting Started with CAC
+Create beginner-friendly articles explaining:
+•	What the Corporate Affairs Commission does.
+•	Why business registration matters in Nigeria.
+•	Who needs to register a business and which entities can be registered.
+•	Differences between business registration, company incorporation, and post-incorporation filings.
+•	How to choose the appropriate legal structure.
+•	How to access the official CAC portal.
+•	How to find and verify an existing registered entity.
+•	Common registration misconceptions and mistakes.
+Category B: Business Name Registration
+Cover:
+•	Eligibility and basic requirements.
+•	Choosing a suitable business name.
+•	Name availability searches and reservation.
+•	Restricted words and consent requirements.
+•	Business-name registration steps on the current i-CRP.
+•	Proprietor and partner information.
+•	Identification, passport photograph, signature, address, and other verified requirements.
+•	Business commencement dates.
+•	Application submission, payment, queries, approval, and certificate retrieval.
+•	How to correct application errors.
+•	What to do when a name is unavailable.
+•	Business-name annual returns and other applicable compliance obligations.
+•	Changing business-name details, business address, proprietors, and other registrable particulars.
+•	Upgrading from a business name to a company, including the applicable legal process and limitations.
+Category C: Company Incorporation
+Cover:
+•	Private companies limited by shares.
+•	Public companies limited by shares.
+•	Companies limited by guarantee.
+•	Unlimited companies.
+•	Other relevant company classifications recognised by CAC.
+•	Differences between a business name and a limited liability company.
+•	Choosing and reserving a company name.
+•	Share capital and share allocation.
+•	Shareholders, subscribers, directors, and company secretaries.
+•	Registered office and business address.
+•	Persons with Significant Control (PSC) and beneficial ownership disclosures.
+•	Memorandum and Articles of Association.
+•	Incorporation information and supporting documents.
+•	Applicable identity and verification requirements.
+•	Incorporation steps using the current i-CRP.
+•	Filing fees and statutory stamp duties.
+•	Application queries and corrections.
+•	Electronic certificates, certified extracts, and verification.
+•	Incorporation of foreign-owned entities and other special cases, with appropriate professional-advice warnings.
+•	Common reasons applications are delayed, queried, or rejected.
+Category D: Incorporated Trustees and Other Entities
+Cover relevant CAC procedures for:
+•	Non-governmental organisations (NGOs).
+•	Associations and clubs.
+•	Foundations and charitable organisations.
+•	Religious organisations.
+•	Incorporated trustees.
+•	Limited liability partnerships (LLPs).
+•	Limited partnerships (LPs).
+•	Companies limited by guarantee.
+Explain the differences between these structures, their eligibility requirements, registration processes, governance obligations, and applicable ongoing compliance duties.
+Only publish requirements supported by current official sources.
+Category E: Post-Incorporation Services
+Create individual service guides for each relevant filing, including:
+1.	Alteration of Memorandum and Articles of Association.
+2.	Change of company name.
+3.	Change, appointment, resignation, removal, or other relevant updates involving directors.
+4.	Change of shareholders or members.
+5.	Transfer, transmission, allotment, surrender, or reallocation of shares.
+6.	Increase or reduction of share capital.
+7.	Change of registered office or registered address.
+8.	Appointment, resignation, or change of company secretary.
+9.	Change or notification of Persons with Significant Control.
+10.	Annual returns filing.
+11.	Certified True Copies (CTCs) of certificates and other eligible records.
+12.	Status reports and search reports.
+13.	Conversion or re-registration of companies.
+14.	Registration of charges, mortgages, and debentures.
+15.	Deeds of release and other relevant charge-related filings.
+16.	Restoration, reinstatement, or other applicable status-related procedures.
+17.	Corrections and amendments to registered information.
+18.	Relevant post-registration services for business names and incorporated trustees.
+19.	Late filing, outstanding returns, and regularisation of records.
+20.	Other current post-incorporation services listed by CAC.
+For each service, provide a dedicated article with:
+•	A plain-English explanation.
+•	Who needs the service.
+•	When the service is necessary.
+•	Eligibility and prerequisite checks.
+•	A detailed, numbered filing procedure.
+•	Required documents and supporting evidence.
+•	Relevant resolutions, consent letters, signatures, identification documents, or other requirements where officially applicable.
+•	Applicable statutory or procedural deadlines.
+•	Current official filing fees and other charges, when verified.
+•	Published CAC processing timelines, with appropriate qualifications.
+•	Common errors and how to avoid them.
+•	What the applicant should expect after submission.
+•	Links to official forms, relevant regulations, and the applicable portal.
+•	A Layitek assistance call to action.
+•	Related knowledge-base articles and FAQs.
+Never present one universal document checklist as applicable to every entity or filing. Requirements must be tailored to the specific service and entity type.
+Category F: Annual Returns and Ongoing Compliance
+Cover:
+•	What annual returns are.
+•	Which entity types have annual-return obligations.
+•	Filing frequency and applicable due dates.
+•	Applicable filing periods and relevant statutory provisions.
+•	Required information and supporting documents.
+•	How to determine whether an entity has outstanding returns.
+•	Consequences of late filing or non-compliance, only where verified.
+•	How to regularise outstanding returns.
+•	PSC and beneficial ownership reporting obligations.
+•	Keeping company and business records up to date.
+•	Differences between CAC annual returns and tax returns.
+•	Relevant compliance obligations following changes in ownership, directors, address, or share capital.
+Clearly distinguish CAC obligations from requirements administered by the Federal Inland Revenue Service, Nigeria Revenue Service, state tax authorities, and other agencies. Do not imply that CAC registration automatically satisfies all tax, licensing, or regulatory obligations.
+Category G: Documents, Fees, Forms, and Timelines
+Provide a central resource library with:
+•	Current official filing-fee references.
+•	Statutory stamp-duty information where applicable.
+•	Official forms and downloadable resources.
+•	Document preparation checklists.
+•	Published service timelines.
+•	Application tracking instructions.
+•	Common query-response procedures.
+•	Certificate retrieval and record verification guides.
+•	Direct links to the relevant official CAC resources.
+Where fees vary by entity, share capital, filing type, urgency, or other factors, explain the applicable variables.
+Never hard-code unverified prices into multiple articles. Store fees and timelines as structured data with their source, effective date, and last verification date.
+If current values cannot be verified, display a prominent instruction to confirm the latest amount on the official CAC portal.
+Category H: Troubleshooting and Common Problems
+Create practical guides for:
+•	Proposed business name rejected or unavailable.
+•	Restricted name requiring consent.
+•	Duplicate account or login difficulties.
+•	Lost or inaccessible account email.
+•	Forgotten password and two-factor authentication.
+•	Application stuck at pending.
+•	Application queried or rejected.
+•	Payment completed but application status unchanged.
+•	Missing certificate or certified extract.
+•	Incorrect director, shareholder, proprietor, or company information.
+•	Outstanding annual returns.
+•	Difficulty accessing post-incorporation services.
+•	Discrepancies between CAC records and submitted documents.
+•	Delayed applications and official complaint procedures.
+For each issue, provide symptoms, likely causes, safe troubleshooting steps, supporting documents if applicable, escalation routes, and warnings against unofficial payment requests or sharing portal passwords.
+Category I: CAC Glossary and Definitions
+Create an alphabetical glossary with searchable definitions, examples, related terms, and links to relevant articles.
+Include terms such as:
+•	CAC — Corporate Affairs Commission.
+•	CAMA — Companies and Allied Matters Act.
+•	CRP/i-CRP — Company Registration Portal.
+•	Business Name.
+•	Incorporation.
+•	Proprietor.
+•	Subscriber.
+•	Director.
+•	Shareholder.
+•	Member.
+•	Company Secretary.
+•	Registered Office.
+•	Memorandum of Association.
+•	Articles of Association.
+•	Share Capital.
+•	Issued Shares.
+•	Allotment of Shares.
+•	Transfer of Shares.
+•	Annual Returns.
+•	Persons with Significant Control (PSC).
+•	Beneficial Ownership.
+•	Certified True Copy (CTC).
+•	Status Report.
+•	Name Reservation.
+•	Restricted Name.
+•	Incorporated Trustees.
+•	Limited Liability Partnership (LLP).
+•	Limited Partnership (LP).
+•	Special Resolution.
+•	Ordinary Resolution.
+•	Statutory Filing.
+•	Filing Fee.
+•	Statutory Stamp Duty.
+•	Application Query.
+•	Post-Incorporation.
+•	Pre-Incorporation.
+Add further terms discovered during research. Ensure that legal definitions reflect applicable legislation and current CAC guidance.
+Category J: Frequently Asked Questions
+Build a dedicated FAQ centre, with questions organised by category and linked to full explanatory articles.
+Seed it with at least 100 substantive FAQs, provided each answer can be verified and explained accurately.
+Include questions such as:
+•	How do I register a business name in Nigeria?
+•	How do I register a limited liability company?
+•	What is the difference between a business name and a limited company?
+•	Can I register a business without using an agent?
+•	How do I check whether a business name is available?
+•	What documents do I need for company incorporation?
+•	How do I change my company's registered address?
+•	How do I remove or appoint a director?
+•	How do I transfer shares in a company?
+•	How do I file annual returns?
+•	What happens if my annual returns are outstanding?
+•	How do I change the details of a shareholder?
+•	How do I obtain a certified true copy of my certificate?
+•	How can I correct an error in my CAC records?
+•	How do I retrieve my CAC certificate?
+•	How do I check a company's registration status?
+•	What are Persons with Significant Control?
+•	What is the procedure for altering a company's memorandum and articles?
+•	How do I respond to a CAC application query?
+•	How do I regularise an inactive or non-compliant company's records?
+Do not create repetitive FAQs merely to satisfy a quantity target. Each answer must be useful, accurate, and appropriately sourced.
+4. Standard article template
+Use a consistent article structure:
+1.	Clear, search-friendly title.
+2.	Short answer or summary.
+3.	Who this guide is for.
+4.	When the procedure is necessary.
+5.	Eligibility and prerequisite checks.
+6.	Required documents checklist.
+7.	Step-by-step procedure.
+8.	Fees and timelines, where verified.
+9.	Common mistakes and troubleshooting.
+10.	Frequently asked questions.
+11.	Official source links.
+12.	Related articles.
+13.	“Need help with this CAC service?” Layitek call to action.
+14.	Last verified date and editorial status.
+Use simple Nigerian English, clear headings, concise paragraphs, numbered instructions, tables where useful, and practical examples relevant to Nigerian SMEs.
+Explain technical and legal terminology the first time it appears.
+Include a short disclaimer on articles involving legal interpretation or compliance obligations.
+5. Website design and branding
+Design a modern, trustworthy, mobile-first knowledge base consistent with CAC brand colors stated below:
+Brand colours:
+•	Use CAC brand colours (#ffc758-10%, #1c8512-60% and #18540e-30%)
+•	White and neutral light-grey backgrounds.
+•	Use restrained green gradients and subtle accent colours.
+Use the existing Layitek logo, retrieved from the official website or supplied brand assets. Do not recreate or distort it.
+Design characteristics:
+•	Clean, modern interface.
+•	Excellent readability.
+•	Rounded cards and subtle shadows.
+•	Accessible contrast.
+•	Generous spacing.
+•	Typography: 
+o	Headings: Montserrat Bold
+o	Body: Montserrat Regular
+•	Responsive layouts for desktop, tablet, and mobile.
+•	Clear visual distinction between official requirements, Layitek guidance, warnings, and editorial updates.
+•	Use this memorable, professional typography (Headings: Montserrat Bold
+Body: Montserrat Regular). Maintain consistent typography, spacing, colours, buttons, and iconography across all pages.
+Suggested landing-page headline:
+Your Complete Guide to CAC Registration and Compliance
+Suggested subheading:
+“Understand business registration, incorporation, and post-incorporation requirements in Nigeria with practical guides, verified information, and expert assistance from Layitek.”
+6. Core user experience and features
+A. Intelligent search
+Create a prominent global search bar with:
+•	Instant search suggestions.
+•	Typo-tolerant matching where supported.
+•	Search by question, keyword, service name, or document.
+•	Synonym matching.
+•	Search filters by category, entity type, and content type.
+•	Highlighted search terms.
+•	Useful empty-state suggestions.
+•	Search analytics to identify unanswered questions.
+Support queries such as “remove director,” “change company address,” “CAC annual returns,” and “alter memorandum.”
+B. Category and topic navigation
+Create a category index, topic landing pages, breadcrumbs, related articles, and cross-links between definitions, FAQs, and service guides.
+Allow users to navigate from a question to its complete guide and from the guide to relevant official documents.
+C. Interactive checklists
+Where practical, provide interactive document checklists for individual filing types.
+Allow users to mark documents as prepared and print or export the checklist. Do not collect sensitive personal documents unless a secure, explicitly designed upload workflow is implemented.
+Clearly state that checklists are guides and that the current official requirements for the particular case must be confirmed.
+D. Step-by-step decision tools
+Create simple guided tools, including:
+•	Which CAC entity type may suit my situation?
+•	Do I need pre-incorporation or post-incorporation assistance?
+•	Which post-incorporation service do I need?
+•	What documents should I prepare for my chosen service?
+•	What should I do if my CAC application has been queried?
+These tools must provide educational guidance rather than make binding legal determinations.
+E. Contact and conversion features
+Place contextual calls to action throughout the knowledge base.
+Use the following official Layitek contact details:
+•	Website: https://www.layitek.com
+•	WhatsApp: https://wa.me/2347064506982
+•	Phone: 08105554731
+Suggested calls to action:
+•	“Need Help Registering Your Business?”
+•	“Get Assistance With Your CAC Filing.”
+•	“Need to Update Your Company Records?”
+•	“Get Help With Outstanding Annual Returns.”
+Route visitors to the relevant Layitek service or contact page. Use the existing website's actual service URLs where verified; do not invent destinations.
+Do not promise guaranteed approval, instant incorporation, guaranteed timelines, or preferential treatment at CAC.
+F. Feedback and content improvement
+Add article feedback options such as “Was this helpful?” and an optional comment field.
+Provide an administrative workflow for reviewing feedback and identifying content gaps.
+7. Content management system and technical architecture
+First inspect the existing incorporations.layitek.com website and its technology stack.
+incorporations.layitek.com is a new subdomain, inspect and recommend suitable technology for deployment
+If a separate application is more suitable, explain the trade-offs and propose a maintainable architecture before implementation.
+Requirements:
+•	Structured, editable content.
+•	Category and tag management.
+•	Reusable article templates.
+•	Admin editing and review workflows.
+•	Draft, reviewed, published, and needs-verification statuses.
+•	Version history or a clear editorial change log.
+•	Source URLs and verification metadata for each article.
+•	Scheduled review dates for changing regulatory content.
+•	Search indexing and sensible URL structures.
+•	Redirect management for changed URLs.
+•	Automated backups and security controls.
+•	Spam protection on forms.
+•	Role-based permissions for content editors and administrators.
+•	Secure storage of any collected information.
+•	No exposure of API keys, passwords, private credentials, or sensitive portal data.
+Avoid unnecessary plugins, expensive infrastructure, and features that cannot be maintained by a small business.
+8. SEO and discoverability
+Optimise the knowledge base for relevant search intent in Nigeria.
+For each article, generate:
+•	Unique SEO title.
+•	Meta description.
+•	Clean, descriptive URL slug.
+•	Primary search intent.
+•	Relevant secondary keywords.
+•	Logical heading structure.
+•	Internal links.
+•	Image alt text where images are used.
+•	Appropriate structured data where supported.
+Use appropriate schema types, such as Article, BreadcrumbList, and FAQPage where eligible under current search-engine guidelines.
+Do not add fake reviews, fabricated author credentials, unsupported ratings, or misleading structured data.
+Avoid keyword stuffing, duplicate articles, thin content, and unsupported claims about ranking performance.
+9. Source attribution, accuracy, and legal safeguards
+Every article containing substantive CAC requirements must include:
+•	Official source title.
+•	Clickable source URL.
+•	Last verified date.
+•	Applicable effective date, where known.
+•	A distinction between statutory requirements and procedural guidance.
+•	A clear warning where requirements vary by entity type or individual circumstances.
+Provide a source-reference panel at the end of each article.
+Where an official source is unavailable, contradictory, or unclear, state the limitation and direct readers to the appropriate official CAC channel.
+Display this general disclaimer:
+“This knowledge base is provided by Layitek Limited for general information and educational purposes. It is not a substitute for applicable legislation, official CAC instructions, or professional legal, accounting, or tax advice. Requirements, fees, procedures, and timelines may change. Confirm the latest applicable requirements through the official Corporate Affairs Commission before filing.”
+Do not imply that Layitek is part of CAC or that this knowledge base is an official government website.
+Only describe Layitek's services accurately without claiming accreditation.
+10. Content maintenance and monitoring
+Build a sustainable editorial process.
+•	Recheck high-impact regulatory pages, filing fees, portal procedures, and service timelines regularly.
+•	Set a configurable review interval, with shorter intervals for volatile information.
+•	Flag articles when a source URL changes, a document is superseded, or conflicting instructions are detected.
+•	Maintain a list of articles requiring human verification.
+•	Record what changed, when it changed, and which source supports the change.
+•	Do not silently rewrite statutory requirements based on unverified AI interpretations.
+•	Never allow automated crawling to publish unreviewed changes directly to production.
+If automated source monitoring is supported, generate alerts and draft suggested updates for human approval.
+11. Deliverables
+Complete the project in the following order:
+Phase 1 — Research and discovery
+•	Crawl and index official CAC resources.
+•	Produce a source inventory.
+•	Map the content categories.
+•	Identify conflicting, outdated, and missing information.
+Phase 2 — Information architecture
+•	Produce the sitemap.
+•	Define content types, taxonomies, article templates, metadata, and search behaviour.
+•	Specify the navigation structure and user journeys.
+Phase 3 — Content production
+•	Develop the initial knowledge-base articles.
+•	Populate the FAQ centre and glossary.
+•	Create service-specific checklists.
+•	Add official source citations and verification dates.
+•	Provide a content audit showing verified, provisional, and missing items.
+Phase 4 — Website development
+•	Implement the responsive interface.
+•	Integrate the knowledge base with the selected platform.
+•	Build search, filters, navigation, interactive checklists, decision tools, and lead-generation features.
+•	Create the content administration and editorial review workflows.
+Phase 5 — Quality assurance
+•	Test search relevance.
+•	Check all links.
+•	Validate mobile and desktop layouts.
+•	Check accessibility and colour contrast.
+•	Verify metadata and structured data.
+•	Test forms, security, backups, permissions, and performance.
+•	Confirm that no fabricated requirements or outdated instructions have been presented as current facts.
+Phase 6 — Launch
+•	Provide the deployed website URL or a working staging environment.
+•	Supply the sitemap and content inventory.
+•	Provide a source register and outstanding verification list.
+•	Document how Layitek staff can add, edit, verify, and update articles.
+•	Provide a maintenance and review schedule.
+•	Identify all remaining work that requires human intervention.
+12. Acceptance criteria
+The project is complete only when:
+1.	The knowledge base is populated with useful, original, source-supported content.
+2.	Pre-incorporation and post-incorporation topics are both comprehensively covered.
+3.	Users can find information through search, categories, FAQs, definitions, and related articles.
+4.	Each substantive regulatory article has traceable official sources and a verification date.
+5.	Fees, deadlines, and service timelines are not fabricated or presented without appropriate context.
+6.	The website is responsive, accessible, secure, and consistent with CAC’s branding colors as stated.
+7.	Content can be maintained without rebuilding the website.
+8.	Relevant articles generate contextual leads for Layitek's services.
+9.	No unsupported CAC accreditation claims or official-government affiliations are made.
+10.	All unresolved regulatory questions are clearly flagged rather than concealed.
+Begin by auditing the existing website and crawling the official CAC sources. Produce the research inventory and proposed sitemap first, then proceed through the remaining phases. Do not stop after providing a proposal or static mockup: implement the actual knowledge base to the extent permitted by the available tools, credentials, and hosting environment. Never claim to have deployed or tested anything that you have not actually deployed or tested.
+
